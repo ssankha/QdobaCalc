@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/menu_gradient"
+       android:orientation="vertical">
+
+
+
+       <ImageButton
+           android:layout_width="380dp"
+           android:layout_height="200dp"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="80dp"
+           android:src="@drawable/qdoba_calc_logo"
+           android:scaleType="fitCenter"
+           android:backgroundTint="@color/macaroni"
+           android:background="@drawable/round_button"
+           android:elevation="50dp"
+           android:padding="20dp"
+           android:clickable="false">
+
+       </ImageButton>
+
+
+       <Button
+           android:layout_width="200dp"
+           android:layout_height="60dp"
+           android:layout_marginTop="50dp"
+           android:layout_gravity="center_horizontal"
+           android:backgroundTint="@color/qdoba_orange"
+           android:textColor="@color/black"
+           android:text="Burrito"
+           android:textStyle="bold"
+           android:textSize="20dp"
+           android:id="@+id/burrito_button"
+           android:onClick="onClick">
+       </Button>
+
+       <Button
+           android:layout_width="200dp"
+           android:layout_height="60dp"
+           android:layout_marginTop="20dp"
+           android:layout_gravity="center_horizontal"
+           android:backgroundTint="@color/qdoba_orange"
+           android:textColor="@color/black"
+           android:text="Bowl"
+           android:textStyle="bold"
+           android:textSize="20dp"
+           android:id="@+id/bowl_button"
+           android:onClick="onClick">
+
+       </Button>
+
+       <Button
+           android:layout_width="200dp"
+           android:layout_height="60dp"
+           android:layout_marginTop="20dp"
+           android:layout_gravity="center_horizontal"
+           android:backgroundTint="@color/qdoba_orange"
+           android:textColor="@color/black"
+           android:text="Quesadilla"
+           android:textStyle="bold"
+           android:textSize="20dp"
+           android:id="@+id/quesadilla_button"
+           android:onClick="onClick">
+       </Button>
+
+   </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
