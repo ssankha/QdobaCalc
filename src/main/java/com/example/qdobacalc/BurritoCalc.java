@@ -646,7 +646,7 @@ public class BurritoCalc extends AppCompatActivity {
     public void toppingsChoice(View view) {
         switch(view.getId()) {
 
-            case R.id.checkbox_pico:
+            case R.id.burrito_checkbox_pico:
                 if(!pico) {
                     totalCal += PICO_DE_GALLO_CALORIES;
                     totalProtein += PICO_DE_GALLO_PROTEIN;
