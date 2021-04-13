@@ -53,6 +53,8 @@ public class BurritoCalc extends AppCompatActivity {
     final int SMOKED_BRISKET_PROTEIN = 20;
     final int PULLED_PORK_CALORIES = 110;
     final int PULLED_PORK_PROTEIN = 13;
+    final int FAJITA_VEGETABLES_CALORIES = 35;
+    final int FAJITA_VEGETABLES_PROTEIN = 1;
     final int IMPOSSIBLE_CALORIES = 180;
     final int IMPOSSIBLE_PROTEIN  = 13;
 
@@ -85,8 +87,6 @@ public class BurritoCalc extends AppCompatActivity {
     final int SHREDDED_CHEESE_PROTEIN = 7;
     final int SHREDDED_LETTUCE_CALORIES = 110;
     final int SHREDDED_LETTUCE_PROTEIN = 7;
-    final int FAJITA_VEGETABLES_CALORIES = 35;
-    final int FAJITA_VEGETABLES_PROTEIN = 1;
     final int SOUR_CREAM_CALORIES = 50;
     final int SOUR_CREAM_PROTEIN = 1;
 //    final int ONIONS_CALORIES = 0;
@@ -101,13 +101,10 @@ public class BurritoCalc extends AppCompatActivity {
     boolean jalapeno = false;
     boolean cheese = false;
     boolean lettuce = false;
-    boolean vegetables = false;
     boolean sourCream = false;
 
 
-
-
-
+    // MACROS
     int totalCal = 0;
     int totalProtein = 0;
 
@@ -527,6 +524,53 @@ public class BurritoCalc extends AppCompatActivity {
                 updateData();
                 break;
 
+            case R.id.burrito_radio_fajita_vegetables:
+                if(!proteinChosen) {
+                    // no protein chosen
+                    proteinCal = FAJITA_VEGETABLES_CALORIES;
+                    proteinNum = FAJITA_VEGETABLES_CALORIES;
+                    totalCal += proteinCal;
+                    totalProtein += proteinNum;
+                    proteinChosen = true;
+                }
+                else {
+                    // remove previous choice and add vegetable macros
+                    totalCal -= proteinCal;
+                    totalProtein -= proteinNum;
+
+                    proteinCal = FAJITA_VEGETABLES_CALORIES;
+                    proteinNum = FAJITA_VEGETABLES_PROTEIN;
+                    totalCal += proteinCal;
+                    totalProtein += proteinNum;
+                }
+
+                updateData();
+                break;
+
+
+            case R.id.burrito_radio_double_fajita_vegetables:
+                if(!proteinChosen) {
+                    // no protein chosen
+                    proteinCal = 2*FAJITA_VEGETABLES_CALORIES;
+                    proteinNum = 2*FAJITA_VEGETABLES_CALORIES;
+                    totalCal += proteinCal;
+                    totalProtein += proteinNum;
+                    proteinChosen = true;
+                }
+                else {
+                    // remove previous choice and add vegetable macros
+                    totalCal -= proteinCal;
+                    totalProtein -= proteinNum;
+
+                    proteinCal = 2*FAJITA_VEGETABLES_CALORIES;
+                    proteinNum = 2*FAJITA_VEGETABLES_PROTEIN;
+                    totalCal += proteinCal;
+                    totalProtein += proteinNum;
+                }
+
+                updateData();
+                break;
+
 
             case R.id.burrito_radio_impossible:
                 if(!proteinChosen) {
@@ -732,21 +776,6 @@ public class BurritoCalc extends AppCompatActivity {
                     totalCal -= SHREDDED_LETTUCE_CALORIES;
                     totalProtein -= SHREDDED_LETTUCE_PROTEIN;
                     lettuce = false;
-                }
-
-                updateData();
-                break;
-
-            case R.id.burrito_checkbox_fajita_vegetables:
-                if(!vegetables) {
-                    totalCal += FAJITA_VEGETABLES_CALORIES;
-                    totalProtein += FAJITA_VEGETABLES_PROTEIN;
-                    vegetables = true;
-                }
-                else {
-                    totalCal -= FAJITA_VEGETABLES_CALORIES;
-                    totalProtein -= FAJITA_VEGETABLES_PROTEIN;
-                    vegetables = false;
                 }
 
                 updateData();
