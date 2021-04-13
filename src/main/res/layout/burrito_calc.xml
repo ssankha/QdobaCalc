@@ -271,20 +271,6 @@
                     android:buttonTint="@color/burgundy"
                     android:onClick="proteinChoice"/>
 
-                <RadioButton android:id="@+id/burrito_radio_fajita_veggies"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Fajita Vegetables"
-                    android:buttonTint="@color/burgundy"
-                    android:onClick="proteinChoice"/>
-
-                <RadioButton android:id="@+id/burrito_radio_double_fajita_veggies"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Double Fajita Vegetables"
-                    android:buttonTint="@color/burgundy"
-                    android:onClick="proteinChoice"/>
-
                 <RadioButton android:id="@+id/burrito_radio_impossible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -455,6 +441,14 @@
                     android:text="Sour Cream"
                     android:buttonTint="@color/burgundy"
                     android:id="@+id/burrito_checkbox_sour_cream"
+                    android:onClick="toppingsChoice"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fajita Vegetable"
+                    android:buttonTint="@color/burgundy"
+                    android:id="@+id/burrito_checkbox_fajita_vegetables"
                     android:onClick="toppingsChoice"/>
 
                 <CheckBox
