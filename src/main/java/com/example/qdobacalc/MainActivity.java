@@ -25,8 +25,14 @@ public class MainActivity extends AppCompatActivity {
         switch(view.getId()) {
 
             case R.id.burrito_button:
-                Intent intent= new Intent(this, BurritoCalc.class);
-                startActivity(intent);
+                Intent intent1 = new Intent(this, BurritoCalc.class);
+                startActivity(intent1);
+                finish();
+                break;
+
+            case R.id.bowl_button:
+                Intent intent2 = new Intent(this, BowlCalc.class);
+                startActivity(intent2);
                 finish();
                 break;
         }
