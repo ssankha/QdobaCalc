@@ -1,6 +1,8 @@
 package com.example.qdobacalc;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -14,6 +16,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
+        switch(view.getId()) {
 
+            case R.id.burrito_button:
+                Intent intent1 = new Intent(this, BurritoCalc.class);
+                startActivity(intent1);
+                finish();
+                break;
+        }
     }
 }
