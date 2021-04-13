@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:label="QdobaCalc" android:name=".BurritoCalc"></activity>
+        <activity android:label="QdobaCalc" android:name=".BowlCalc"></activity>
+        <activity android:label="QdobaCalc" android:name=".QuesadillaCalc"></activity>
     </application>
 
 </manifest>
