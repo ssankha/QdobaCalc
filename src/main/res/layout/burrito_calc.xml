@@ -381,7 +381,7 @@
                     android:layout_height="wrap_content"
                     android:text="Pico de Gallo"
                     android:buttonTint="@color/burgundy"
-                    android:id="@+id/checkbox_pico"
+                    android:id="@+id/burrito_checkbox_pico"
                     android:onClick="toppingsChoice"/>
 
                 <CheckBox
