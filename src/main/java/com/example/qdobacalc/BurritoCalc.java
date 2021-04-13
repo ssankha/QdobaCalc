@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -115,6 +117,8 @@ public class BurritoCalc extends AppCompatActivity {
 
         TextView numProtein = findViewById(R.id.burrito_num_protein);
         numProtein.setText(String.valueOf(totalProtein));
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void tortillaChoice(View view) {
@@ -794,5 +798,22 @@ public class BurritoCalc extends AppCompatActivity {
 
         TextView numProtein = findViewById(R.id.burrito_num_protein);
         numProtein.setText(String.valueOf(totalProtein));
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                Intent intent1 = new Intent(this, MainActivity.class);
+                startActivity(intent1);
+                finish();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
     }
 }
