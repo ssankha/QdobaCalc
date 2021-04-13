@@ -35,6 +35,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent2);
                 finish();
                 break;
+
+            case R.id.quesadilla_button:
+                Intent intent3 = new Intent(this, QuesadillaCalc.class);
+                startActivity(intent3);
+                finish();
+                break;
         }
     }
 }
