@@ -52,13 +52,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Yes"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="tortillaChoice"/>
 
                 <RadioButton android:id="@+id/burrito_radio_no_double_tortilla"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="tortillaChoice"/>
 
             </RadioGroup>
 
@@ -95,19 +97,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="White Rice"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="riceChoice"/>
 
                 <RadioButton android:id="@+id/burrito_radio_brown_rice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Brown Rice"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="riceChoice"/>
 
                 <RadioButton android:id="@+id/burrito_radio_no_rice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="None"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="riceChoice"/>
 
             </RadioGroup>
 
@@ -145,13 +150,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Black Beans"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="beansChoice"/>
+
+                <RadioButton android:id="@+id/burrito_radio_pinto_beans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pinto Beans"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="beansChoice"/>
 
                 <RadioButton android:id="@+id/burrito_radio_no_beans"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="None"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="beansChoice"/>
 
 
             </RadioGroup>
@@ -191,89 +205,100 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Chicken"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/burrito_radio_double_chicken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Double Chicken"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
 
                 <RadioButton android:id="@+id/burrito_radio_steak"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Steak"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/burrito_radio_double_steak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Double Steak"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
 
                 <RadioButton android:id="@+id/burrito_radio_ground_beef"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Ground Beef"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/burrito_radio_double_ground_beef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Double Ground Beef"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
 
                 <RadioButton android:id="@+id/burrito_radio_smoked_brisket"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Smoked Brisket"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/burrito_radio_double_smoked_brisket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Double Smoked Brisket"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
 
                 <RadioButton android:id="@+id/burrito_radio_pulled_pork"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Pulled Pork"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/burrito_radio_double_pulled_pork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Double Pulled Pork"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
 
                 <RadioButton android:id="@+id/burrito_radio_fajita_veggies"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Fajita Vegetables"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/burrito_radio_double_fajita_veggies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Double Fajita Vegetables"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
 
                 <RadioButton android:id="@+id/burrito_radio_impossible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Impossible (plant-based)"
-                    android:onClick="onRadioButtonClicked"/>
-            </RadioGroup>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
 
-            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-
-                android:layout_width="400dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center"
-                android:paddingLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:paddingBottom="7dp"
-                android:background="@drawable/round_button"
-                android:backgroundTint="@color/macaroni"
-                android:elevation="20dp">
-
-                <TextView
-                    android:layout_marginTop="7dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Extra Protein"
-                    android:textSize="20dp"
-                    android:textStyle="bold">
-
-                </TextView>
-
-                <View
-                    android:layout_width="300dp"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="4dp"
-                    android:background="@android:color/black"/>
-
-                <RadioButton android:id="@+id/burrito_radio_extra_protein"
+                <RadioButton android:id="@+id/burrito_radio_double_impossible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Yes"
-                    android:onClick="onRadioButtonClicked"/>
-
-                <RadioButton android:id="@+id/burrito_radio_no_extra_protein"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No"
-                    android:onClick="onRadioButtonClicked"/>
-
-
+                    android:text="Double Impossible (plant-based)"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
             </RadioGroup>
-
 
 
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
@@ -309,13 +334,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Queso"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="quesoChoice"/>
 
                 <RadioButton android:id="@+id/burrito_radio_no_queso"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="None"
-                    android:onClick="onRadioButtonClicked"/>
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="quesoChoice"/>
             </RadioGroup>
 
 
@@ -353,74 +380,90 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Pico de Gallo"
+                    android:buttonTint="@color/burgundy"
                     android:id="@+id/checkbox_pico"
-                    android:onClick="onCheckboxClicked"/>
-
-
+                    android:onClick="toppingsChoice"/>
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Salsa Verde"
+                    android:buttonTint="@color/burgundy"
                     android:id="@+id/burrito_checkbox_salsa_verde"
-                    android:onClick="onCheckboxClicked"/>
+                    android:onClick="toppingsChoice"/>
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Salsa Roja"
+                    android:buttonTint="@color/burgundy"
                     android:id="@+id/burrito_checkbox_salsa_roja"
-                    android:onClick="onCheckboxClicked"/>
+                    android:onClick="toppingsChoice"/>
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Habanero Salsa"
+                    android:buttonTint="@color/burgundy"
                     android:id="@+id/burrito_checkbox_habanero_salsa"
-                    android:onClick="onCheckboxClicked"/>
+                    android:onClick="toppingsChoice"/>
 
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Corn"
+                    android:buttonTint="@color/burgundy"
                     android:id="@+id/burrito_checkbox_corn"
-                    android:onClick="onCheckboxClicked"/>
+                    android:onClick="toppingsChoice"/>
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Guacamole"
+                    android:buttonTint="@color/burgundy"
                     android:id="@+id/burrito_checkbox_guacamole"
-                    android:onClick="onCheckboxClicked"/>
+                    android:onClick="toppingsChoice"/>
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Jalapenos"
+                    android:buttonTint="@color/burgundy"
                     android:id="@+id/burrito_checkbox_jalapenos"
-                    android:onClick="onCheckboxClicked"/>
+                    android:onClick="toppingsChoice"/>
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Shredded Cheese"
+                    android:buttonTint="@color/burgundy"
                     android:id="@+id/burrito_checkbox_shredded_cheese"
-                    android:onClick="onCheckboxClicked"/>
+                    android:onClick="toppingsChoice"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shredded Lettuce"
+                    android:buttonTint="@color/burgundy"
+                    android:id="@+id/burrito_checkbox_shredded_lettuce"
+                    android:onClick="toppingsChoice"/>
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Sour Cream"
+                    android:buttonTint="@color/burgundy"
                     android:id="@+id/burrito_checkbox_sour_cream"
-                    android:onClick="onCheckboxClicked"/>
+                    android:onClick="toppingsChoice"/>
 
                 <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Onions"
+                    android:buttonTint="@color/burgundy"
                     android:id="@+id/burrito_checkbox_onions"
-                    android:onClick="onCheckboxClicked"/>
+                    android:onClick="toppingsChoice"/>
 
             </LinearLayout>
 
