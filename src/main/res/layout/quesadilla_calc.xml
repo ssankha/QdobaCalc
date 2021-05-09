@@ -1,6 +1,381 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/calc_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="10dp">
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/macaroni"
+                android:elevation="20dp">
+
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Double-Wrapped Tortilla"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/black"/>
+
+                <RadioButton android:id="@+id/quesadilla_radio_double_tortilla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="tortillaChoice"/>
+
+                <RadioButton android:id="@+id/quesadilla_radio_no_double_tortilla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="tortillaChoice"/>
+
+            </RadioGroup>
+
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/macaroni"
+                android:elevation="20dp">
+
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Protein"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@android:color/black"/>
+
+                <RadioButton android:id="@+id/quesadilla_radio_chicken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/quesadilla_radio_double_chicken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Double Chicken"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/quesadilla_radio_steak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Steak"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/quesadilla_radio_double_steak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Double Steak"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/quesadilla_radio_ground_beef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ground Beef"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/quesadilla_radio_double_ground_beef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Double Ground Beef"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/quesadilla_radio_smoked_brisket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smoked Brisket"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/quesadilla_radio_double_smoked_brisket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Double Smoked Brisket"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/quesadilla_radio_pulled_pork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pulled Pork"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/quesadilla_radio_double_pulled_pork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Double Pulled Pork"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/quesadilla_radio_impossible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Impossible (plant-based)"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+
+                <RadioButton android:id="@+id/quesadilla_radio_double_impossible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Double Impossible (plant-based)"
+                    android:buttonTint="@color/burgundy"
+                    android:onClick="proteinChoice"/>
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/macaroni"
+                android:elevation="20dp">
+
+
+                <TextView
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Toppings"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+                </TextView>
+
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@android:color/black"/>
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pico de Gallo"
+                    android:buttonTint="@color/burgundy"
+                    android:id="@+id/quesadilla_checkbox_pico"
+                    android:onClick="toppingsChoice"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salsa Verde"
+                    android:buttonTint="@color/burgundy"
+                    android:id="@+id/quesadilla_checkbox_salsa_verde"
+                    android:onClick="toppingsChoice"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salsa Roja"
+                    android:buttonTint="@color/burgundy"
+                    android:id="@+id/quesadilla_checkbox_salsa_roja"
+                    android:onClick="toppingsChoice"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Habanero Salsa"
+                    android:buttonTint="@color/burgundy"
+                    android:id="@+id/quesadilla_checkbox_habanero_salsa"
+                    android:onClick="toppingsChoice"/>
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Corn"
+                    android:buttonTint="@color/burgundy"
+                    android:id="@+id/quesadilla_checkbox_corn"
+                    android:onClick="toppingsChoice"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guacamole"
+                    android:buttonTint="@color/burgundy"
+                    android:id="@+id/quesadilla_checkbox_guacamole"
+                    android:onClick="toppingsChoice"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jalapenos"
+                    android:buttonTint="@color/burgundy"
+                    android:id="@+id/quesadilla_checkbox_jalapenos"
+                    android:onClick="toppingsChoice"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shredded Cheese"
+                    android:buttonTint="@color/burgundy"
+                    android:id="@+id/quesadilla_checkbox_shredded_cheese"
+                    android:onClick="toppingsChoice"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shredded Lettuce"
+                    android:buttonTint="@color/burgundy"
+                    android:id="@+id/quesadilla_checkbox_shredded_lettuce"
+                    android:onClick="toppingsChoice"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sour Cream"
+                    android:buttonTint="@color/burgundy"
+                    android:id="@+id/quesadilla_checkbox_sour_cream"
+                    android:onClick="toppingsChoice"/>
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Onions"
+                    android:buttonTint="@color/burgundy"
+                    android:id="@+id/quesadilla_checkbox_onions"
+                    android:onClick="toppingsChoice"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fajita Vegetables"
+                    android:buttonTint="@color/burgundy"
+                    android:id="@+id/quesadilla_checkbox_fajita_vegetables"
+                    android:onClick="toppingsChoice"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Queso"
+                    android:buttonTint="@color/burgundy"
+                    android:id="@+id/quesadilla_checkbox_queso"
+                    android:onClick="toppingsChoice"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingVertical="10dp"
+                android:paddingBottom="7dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="@color/macaroni"
+                android:elevation="20dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Calories:" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/quesadilla_num_calories" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"
+                    android:text="Protein:" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/quesadilla_num_protein" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
